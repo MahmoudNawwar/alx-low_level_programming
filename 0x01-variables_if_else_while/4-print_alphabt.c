@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * main -a program Write a program that prints the alphabet in lowercase,
- *  followed by a new line.
+ * main -a program that print in lowercase except qe
  *
- * return (0) (success)
+ * Return: (0) (success)
  */
 int main(void)
 {
@@ -11,11 +10,11 @@ int main(void)
 
 	while (letter <= 'z')
 	{
-		if (letter != 'e' && letter != 'q')
-		{
-			putchar(letter)
-		}
-		letter++;
+	if (letter != 'e' && letter != 'q')
+	{
+	putchar(letter);
+	}
+	letter++;
 	}
 
 	putchar('\n');
