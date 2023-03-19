@@ -1,29 +1,19 @@
 #include <stdio.h>
 /**
- * main -a program that print from 1 to 0
- * with ' ' and ','
+ * main -a program that prints all possible
+ * combinations of single-digit numbers.
  *
- * Return: (0) (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-
-	for (i = 0; i < 10; i++)
+	putchar('0');
+	for (int i = 1; i < 10; i++)
 	{
-		if (i != 9)
-		{
-		putchar(i + '0');
-		putchar(',');
-		putchar(' ');
-		}
-		else if (i == 9)
-		{
-			putchar(9 + '0')
-		
+	putchar(',');
+	putchar(' ');
+	putchar(i + '0');
 	}
-
 	putchar('\n');
-
 	return (0);
 }
