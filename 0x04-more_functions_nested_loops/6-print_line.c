@@ -1,12 +1,13 @@
 #include "main.h"
+
 /**
- * print_line - draw stright line
- * @n:  number of times of char
+ * print_line - draw a st line in terminal
+ * @n: number of times of char
  */
 
 void print_line(int n)
 {
-	if (n <  0)
+	if (n < 0)
 	{
 		_putchar('\n');
 	}
@@ -14,10 +15,10 @@ void print_line(int n)
 	{
 		int i;
 
-		for (i == n; i > 0; i++)
+		for (i = 1; i <= n; i++)
 		{
-			_putchar('_');
+			_putchar(95);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
