@@ -1,21 +1,15 @@
 #include "main.h"
-
 /**
- * print_most_numbers - print all numbers from 0x to 9x except 2x and 4x
- * @void
- * Return: Void
+ * print_numbers - print numbers form 0 -9
+ * Return: the respective sequence
  */
-
-void print_most_numbers(void)
+void print_numbers(void)
 {
 	int i;
 
-	for (i = 48; i < 58; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		if (!(i == 50 || i == 52))
-		{
-			_putchar(i);
-		}
+		_putchar(i);
 	}
 	_putchar('\n');
 }
