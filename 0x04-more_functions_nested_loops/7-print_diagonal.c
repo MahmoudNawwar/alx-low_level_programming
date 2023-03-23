@@ -1,23 +1,29 @@
-#include "main"
-/*
- * print_diagonal - draw a line of \
- * @n: the count of \
+#include "main.h"
+
+/**
+ * print_diagonal - draws a diagonal
+ * @n: number of \ should be printed
  */
+
 void print_diagonal(int n)
 {
 	if (n <= 0)
 	{
 		_putchar('\n');
-	}
-	else
+	} else
 	{
-		int i;
+		int i, j;
 
 		for (i = 0; i < n; i++)
 		{
-			__putchar('\\');
+			for (j = 0; j < n; j++)
+			{
+				if (j == i)
+					_putchar('\\');
+				else if (j < i)
+					_putchar(' ');
+			}
+			_putchar('\n');
 		}
-
-		_putchar('\n');
 	}
 }
